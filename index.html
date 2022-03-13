@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" async defer ></script>
+    <title>Input Handlers</title>
+  </head>
+  <body>
+
+    <div class="app-ct">
+
+      <h1>Input Handlers</h1>
+
+      <div class="section-ct">
+        <h2>Change Happens "On Change"</h2>
+        <p>For inputs, the change event doesn't fire until the input loses focus.</p>
+        <p>Enter something into the field, and then click somewhere else to trigger the event</p>
+        <div>
+          <input type="text" id="input1" value="amanda" placeholder="change">
+        </div>
+      </div>
+
+      <div class="section-ct">
+        <h2>Change Happens "On Focus"</h2>
+        <div>
+          <input type="text" id="input2" value="" placeholder="focus">
+        </div>
+      </div>
+
+      <div class="section-ct">
+        <h2>Change Happens "On Blur"</h2>
+        <p>The blur event fires when an element has lost focus.</p>
+        <div>
+          <input type="text" id="input3" value="" placeholder="blur">
+        </div>
+      </div>
+
+      <div class="section-ct">
+        <h2>Change Happens "On Key Up"</h2>
+        <p>The keyup event fires when the user releases a key.</p>
+        <div>
+          <input type="text" id="input4" value="" placeholder="keyup">
+        </div>
+      </div>
+
+
+      <h1>Select Handlers</h1>
+      <div class="section-ct">
+        <h2>Change Happens "On Change"</h2>
+        <p>For select, the change event fires when the user selects a dropdown value.</p>
+
+        <div>
+
+          <label for="cars">Choose A Fruit:</label>
+
+          <select name="fruit" id="select1">
+            <option value="apple">Apple</option>
+            <option value="strawberry">Strawberry</option>
+            <option value="blueberry">Blueberry</option>
+            <option value="watermelon">Watermelon</option>
+          </select>
+
+        </div>
+      </div>
+
+
+    <h1>Filter Example</h1>
+    <div class="section-ct">
+      <h2>Filter on "Change"</h2>
+      <p>Write a function that filters an array of strings.</p>
+      <p>Goal is to log the filtered array of strings on change</p>
+      <p>Input a value into your search bar, loop through the array strings. If a string des not have the character in the search bar, filter them out.</p>
+
+
+      <h3>Stretch Goal</h3>
+      <p>Render the filtered results on change</p>
+
+      <div>
+
+        <label for="searchBar">Filtered Fruit:</label>
+
+        <input id="searchBar" placeholder="search..."/>
+
+      </div>
+    </div>
+
+    </div>
+
+
+  </body>
+</html>

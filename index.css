@@ -1,0 +1,10 @@
+.app-ct {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .section-ct {
+    border: 1px black solid;
+    padding: 10px;
+    margin: 10px;
+  }
