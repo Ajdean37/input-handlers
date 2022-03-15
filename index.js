@@ -39,14 +39,34 @@ function handleSelect( e ) {
     console.log(e.target.value);
 }
 // add fruit filter event handler
-function handleFilter(event) {
-    console.log(event.target.value);
-}
 
+let fruitList = [];
+console.log(searchBar);
 
+function handleFilter( e ) {
+    const searchString = e.target.value;
+    const filteredFruits = fruits.filter( fruits => { return fruits.includes(searchString);
+     });
+    console.log(filteredFruits); 
+};
+    
+    
+    
+    
+//     let result = [];
+//         for (const fruit of fruits) {
+//             if (event === fruit ) {
+//                 result.push(fruit);
+//             }
+//         }
+//     console.log(result);
+// }
 
-
-
+// function filterItems(arr, query) {
+//     return arr.filter(function(el) {
+//       return el.toLowerCase().indexOf(query.toLowerCase()) !== -1
+//     })
+//   }
 
 
 //ready dom
@@ -70,10 +90,6 @@ function readyDOM() {
     //add fruit listener here
     let searchBar = document.querySelector('#searchBar');
     searchBar.addEventListener('change', handleFilter);
-    for (const fruit of fruits) {
-
-        
-    }
 }
 
 readyDOM();
