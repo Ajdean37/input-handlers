@@ -45,9 +45,10 @@ console.log(searchBar);
 
 function handleFilter( e ) {
     const searchString = e.target.value;
-    const filteredFruits = fruits.filter( fruits => { return fruits.includes(searchString);
-     });
+    const filteredFruits = fruits.filter( fruits => fruits.includes(searchString) );
     console.log(filteredFruits); 
+    
+
 };
     
     
@@ -89,7 +90,7 @@ function readyDOM() {
 
     //add fruit listener here
     let searchBar = document.querySelector('#searchBar');
-    searchBar.addEventListener('change', handleFilter);
+    searchBar.addEventListener('keyup', handleFilter);
 }
 
 readyDOM();
